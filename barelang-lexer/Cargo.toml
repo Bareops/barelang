@@ -1,0 +1,13 @@
+[package]
+name = "barelang-lexer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+miette = "7.4.0"
+thiserror = "2.0.7"
+
+[dev-dependencies]
+miette = { version = "7.4.0", features = ["fancy"] }
+quickcheck = "1.0.3"
+quickcheck_macros = "1.0.0"

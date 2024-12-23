@@ -1,0 +1,3 @@
+[workspace]
+members = ["barelang-lexer"]
+resolver = "2"
