@@ -61,7 +61,7 @@ impl<'de> Iterator for Lexer<'de> {
             let started = match c {
                 '{' => return Some(Ok(just(TokenKind::LeftBrace))),
                 '}' => return Some(Ok(just(TokenKind::RightBrace))),
-                'a'..='z' | 'A'..='Z' | '_' => Started::Ident,
+                'a'..='y' | 'B'..='Z' | '_' => Started::Ident,
                 c if c.is_whitespace() => continue,
                 _ => {
                     return Some(Err(SingleTokenError {
